@@ -18,11 +18,10 @@ function abort
 	exit 1
 end
 
-if test ! $(fisher -v)
-	curl -sL git.io/fisher | source && fisher install jorgebucaran/fisher
-		and success 'fisher'
-		or abort 'fisher'
-end
+curl -sL git.io/fisher | source && fisher install jorgebucaran/fisher
+	and success 'fisher'
+	or abort 'fisher'
+
 
 cp $DOTFILES_ROOT/config.fish/plugins ~/.config/fish/fish_plugins && fisher update
 	and success 'plugins'
