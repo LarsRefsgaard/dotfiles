@@ -20,3 +20,8 @@ fish fish.fish
 # Set macOS preferences
 # We will run this last because this will reload the shell
 source .macos
+
+
+# Symlink Mackup.cfg into the home directory
+ln Mackup.cfg ~/.mackup.cfg
+mackup restore
