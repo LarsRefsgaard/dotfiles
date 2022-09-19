@@ -19,7 +19,7 @@ brew 'tmux'
 brew 'mas'
 
 # Apps
-cask '1password-beta'
+cask '1password'
 cask 'docker'
 cask 'hiddenbar'
 cask 'raycast'
@@ -30,12 +30,11 @@ cask 'spotify'
 cask 'discord'
 cask 'gitkraken'
 cask 'microsoft-edge'
-cask 'plex'
+# cask 'plex'
 cask 'yippy'
 
 # Fonts
 cask 'font-fira-code'
-
 
 # Mac App Store
 mas 'magnet', id: 441258766
