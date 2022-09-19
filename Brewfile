@@ -17,6 +17,7 @@ brew 'wget'
 brew 'python'
 brew 'tmux'
 brew 'mas'
+brew 'fzf'
 
 # Apps
 cask '1password'
