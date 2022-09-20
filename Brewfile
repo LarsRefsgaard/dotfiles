@@ -38,3 +38,4 @@ cask 'font-fira-code'
 
 # Mac App Store
 mas 'magnet', id: 441258766
+mas 'spark', id: 1176895641
