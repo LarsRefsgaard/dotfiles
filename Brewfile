@@ -32,6 +32,7 @@ cask 'gitkraken'
 cask 'microsoft-edge'
 # cask 'plex'
 cask 'yippy'
+cask '1password/tap/1password-cli'
 
 # Fonts
 cask 'font-fira-code'

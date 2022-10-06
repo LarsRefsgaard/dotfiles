@@ -22,7 +22,7 @@ fish fish.fish
 
 # Symlink Mackup.cfg into the home directory
 ln Mackup.cfg ~/.mackup.cfg
-mackup restore
+mackup restore -f
 
 
 # Set macOS preferences
