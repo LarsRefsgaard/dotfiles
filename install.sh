@@ -21,7 +21,7 @@ fish fish.fish
 
 
 # Symlink Mackup.cfg into the home directory
-ln Mackup.cfg ~/.mackup.cfg
+ln -f Mackup.cfg ~/.mackup.cfg
 mackup restore -f
 
 
