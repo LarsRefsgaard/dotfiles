@@ -17,6 +17,7 @@ brew 'wget'
 brew 'python'
 brew 'tmux'
 brew 'mas'
+brew 'starship'
 
 # Apps
 cask '1password'
