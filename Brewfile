@@ -24,7 +24,8 @@ cask '1password'
 cask 'docker'
 cask 'hiddenbar'
 cask 'raycast'
-cask 'visual-studio-code-insiders'
+cask 'rectangle-pro'
+cask 'visual-studio-code'
 cask 'alt-tab'
 cask 'iterm2'
 cask 'spotify'
@@ -37,5 +38,4 @@ cask '1password/tap/1password-cli'
 cask 'font-fira-code'
 
 # Mac App Store
-mas 'magnet', id: 441258766
 mas 'spark', id: 1176895641
