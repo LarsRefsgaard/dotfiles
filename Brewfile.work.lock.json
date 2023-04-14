@@ -1,0 +1,46 @@
+{
+  "entries": {
+    "cask": {
+      "slack": {
+        "version": "4.31.156",
+        "options": {
+          "full_name": "slack"
+        }
+      },
+      "zoom": {
+        "version": "5.14.2.17213",
+        "options": {
+          "full_name": "zoom"
+        }
+      },
+      "figma": {
+        "version": "116.8.4",
+        "options": {
+          "full_name": "figma"
+        }
+      },
+      "postman": {
+        "version": "10.12.13",
+        "options": {
+          "full_name": "postman"
+        }
+      }
+    },
+    "mas": {
+      "xcode": null,
+      "trello": null
+    }
+  },
+  "system": {
+    "macos": {
+      "ventura": {
+        "HOMEBREW_VERSION": "4.0.13",
+        "HOMEBREW_PREFIX": "/usr/local",
+        "Homebrew/homebrew-core": "api",
+        "CLT": "14.3.0.0.1.1679647830",
+        "Xcode": "14.3",
+        "macOS": "13.3.1"
+      }
+    }
+  }
+}

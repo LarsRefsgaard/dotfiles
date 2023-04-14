@@ -4,7 +4,7 @@ tap 'homebrew/cask-fonts'
 # Install ZSH
 brew 'fish'
 
-# Install GNU core utilities (those that come with OS X are outdated)
+# Install GNU core utilities (those that come with macOS are outdated)
 brew 'coreutils'
 
 # Install Binaries
@@ -31,11 +31,8 @@ cask 'iterm2'
 cask 'spotify'
 cask 'discord'
 cask 'microsoft-edge'
-cask 'yippy'
+cask 'microsoft-outlook'
 cask '1password/tap/1password-cli'
 
 # Fonts
 cask 'font-fira-code'
-
-# Mac App Store
-mas 'spark', id: 1176895641

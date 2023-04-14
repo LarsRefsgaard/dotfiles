@@ -1,0 +1,7 @@
+cask 'slack'
+cask 'zoom'
+cask 'figma'
+cask 'postman'
+
+mas 'xcode', id: 497799835
+mas 'trello', id: 1278508951

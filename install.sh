@@ -16,6 +16,8 @@ brew update
 brew tap homebrew/bundle
 brew bundle
 
+sh work.sh
+
 # Make FISH the default shell environment
 fish fish.fish
 
