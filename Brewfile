@@ -30,7 +30,7 @@ cask 'alt-tab'
 cask 'iterm2'
 cask 'spotify'
 cask 'discord'
-cask 'microsoft-edge'
+cask 'arc'
 cask 'microsoft-outlook'
 cask '1password/tap/1password-cli'
 
