@@ -18,6 +18,7 @@ brew 'python'
 brew 'tmux'
 brew 'mas'
 brew 'starship'
+brew 'thefuck'
 
 # Apps
 cask '1password'
@@ -33,6 +34,7 @@ cask 'discord'
 cask 'arc'
 cask 'microsoft-outlook'
 cask '1password/tap/1password-cli'
+cask 'notion'
 
 # Fonts
 cask 'font-fira-code'
