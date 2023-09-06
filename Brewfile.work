@@ -1,3 +1,5 @@
+brew 'cocoapods'
+
 cask 'slack'
 cask 'zoom'
 cask 'figma'
