@@ -19,6 +19,9 @@ brew 'tmux'
 brew 'mas'
 brew 'starship'
 brew 'thefuck'
+brew 'fzf'
+brew 'fd'
+brew 'bat'
 
 # Apps
 cask '1password'
