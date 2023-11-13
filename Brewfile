@@ -22,6 +22,7 @@ brew 'thefuck'
 brew 'fzf'
 brew 'fd'
 brew 'bat'
+brew 'zoxide'
 
 # Apps
 cask '1password'

@@ -19,14 +19,12 @@ brew bundle
 
 sh work.sh
 
-# Make FISH the default shell environment
-fish fish.fish
-
-
 # Symlink Mackup.cfg into the home directory
 ln -f Mackup.cfg ~/.mackup.cfg
 mackup restore -f
 
+# Make FISH the default shell environment
+fish fish.fish
 
 # Set macOS preferences
 # We will run this last because this will reload the shell

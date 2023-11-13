@@ -18,23 +18,13 @@ function abort
 	exit 1
 end
 
-curl -sL git.io/fisher | source && fisher install jorgebucaran/fisher
+curl -sL git.io/fisher | source && fisher install jorgebucaran/fisher && fisher update
 	and success 'fisher'
 	or abort 'fisher'
-
-
-cp $DOTFILES_ROOT/config.fish/plugins ~/.config/fish/fish_plugins && fisher update
-	and success 'plugins'
-	or abort 'plugins'
 
 yes | fish_config theme save "Catppuccin Macchiato"
 	and success 'colorscheme'
 	or abort 'colorscheme'
-
-
-source */install.fish
-	and success 'install.fish'
-	or abort 'install.fish'
 
 if ! grep (command -v fish) /etc/shells
 	command -v fish | sudo tee -a /etc/shells
