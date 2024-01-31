@@ -1,5 +1,6 @@
 # Taps
 tap 'homebrew/cask-fonts'
+tap 'felixkratz/formulae'
 
 # Install ZSH
 brew 'fish'
@@ -23,8 +24,8 @@ brew 'fzf'
 brew 'fd'
 brew 'bat'
 brew 'zoxide'
-brew 'felixkratz/formulae/borders'
-brew 'felixkratz/formulae/sketchybar'
+brew 'borders'
+brew 'sketchybar'
 
 # Apps
 cask '1password'
