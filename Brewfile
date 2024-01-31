@@ -30,9 +30,7 @@ brew 'sketchybar', restart_service: true
 # Apps
 cask '1password'
 cask 'docker'
-cask 'hiddenbar'
 cask 'raycast'
-cask 'rectangle-pro'
 cask 'visual-studio-code'
 cask 'alt-tab'
 cask 'iterm2'
@@ -43,6 +41,8 @@ cask 'microsoft-outlook'
 cask '1password/tap/1password-cli'
 cask 'notion'
 cask 'nikitabobko/tap/aerospace'
+# cask 'hiddenbar'
+# cask 'hiddenbar'
 
 # Fonts
 cask 'font-fira-code'
