@@ -42,6 +42,7 @@ cask 'arc'
 cask 'microsoft-outlook'
 cask '1password/tap/1password-cli'
 cask 'notion'
+cask 'nikitabobko/tap/aerospace'
 
 # Fonts
 cask 'font-fira-code'
