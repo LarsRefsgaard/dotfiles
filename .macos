@@ -41,6 +41,12 @@ chflags nohidden ~/Library
 # Auto hide menu bar
 defaults write NSGlobalDomain _HIHideMenuBar -bool true
 
+# Finder: show all filename extensions
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Avoid creating .DS_Store files on network volumes
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################

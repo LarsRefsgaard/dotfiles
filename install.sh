@@ -1,5 +1,7 @@
 #!/bin/sh
 
+sudo -v
+
 cd ~/Documents/dotfiles
 
 echo "Setting up your Mac..."
