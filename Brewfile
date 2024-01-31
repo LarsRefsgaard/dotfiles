@@ -24,8 +24,8 @@ brew 'fzf'
 brew 'fd'
 brew 'bat'
 brew 'zoxide'
-brew 'borders'
-brew 'sketchybar'
+brew 'borders', restart_service: true
+brew 'sketchybar', restart_service: true
 
 # Apps
 cask '1password'
