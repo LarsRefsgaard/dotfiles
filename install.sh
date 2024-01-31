@@ -17,8 +17,6 @@ brew update
 brew tap homebrew/bundle
 brew bundle
 
-sh work.sh
-
 # Symlink Mackup.cfg into the home directory
 ln -f Mackup.cfg ~/.mackup.cfg
 mackup restore -f

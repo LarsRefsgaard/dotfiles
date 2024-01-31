@@ -1,8 +1,0 @@
-brew 'cocoapods'
-
-cask 'slack'
-cask 'zoom'
-cask 'figma'
-
-mas 'xcode', id: 497799835
-mas 'trello', id: 1278508951
