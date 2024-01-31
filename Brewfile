@@ -23,6 +23,8 @@ brew 'fzf'
 brew 'fd'
 brew 'bat'
 brew 'zoxide'
+brew 'felixkratz/formulae/borders'
+brew 'felixkratz/formulae/sketchybar'
 
 # Apps
 cask '1password'
