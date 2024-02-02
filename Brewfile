@@ -46,3 +46,4 @@ cask 'nikitabobko/tap/aerospace'
 
 # Fonts
 cask 'font-fira-code'
+cask 'font-jetbrains-mono-nerd-font'
