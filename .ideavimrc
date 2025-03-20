@@ -5,7 +5,7 @@
 "" ========================================================
 
 set scrolloff=10
-" set linenumber
+set number relativenumber
 set showmode
 set showcmd
 
@@ -29,7 +29,6 @@ set highlightedyank
 "" set sneak
 set nerdtree
 
-"(somethign random with a surrounding)
 " Easymotion settings
 Plug 'easymotion/vim-easymotion'
 set notimeout
@@ -40,26 +39,27 @@ let g:WhichKey_FontSize = 16
 let g:WhichKey_CommandColor = "#41ead4"
 let g:WhichKey_PrefixColor = "#f335b2"
 let g:WhichKey_SortOrder = "by_key_prefix_first"
+let g:WhichKey_ShowVimActions = "true"
 
 let g:WhichKeyDesc_leader = "<leader> Leader key"
 
 let g:WhichKeyDesc_leader = "<leader>x Open file explorer"
 
 let g:WhichKeyDesc_easymotion = "<leader>j Jump with Easymotion"
-let g:WhichKeyDesc_easymotion_prefix = "<leader><leader>"
+let g:WhichKeyDesc_easymotion_prefix = "<leader><leader> Easymotion"
 
 let g:WhichKeyDesc_comment = "<leader>c Comment line"
 
-let g:WhichKeyDesc_fold = "<leader>z Folding"
-let g:WhichKeyDesc_fold_all = "<leader>zc Fold all regions"
-let g:WhichKeyDesc_unfold_all = "<leader>zo Unfold all regions"
+let g:WhichKeyDesc_reformat = "<leader>= Reformat file"
+
+"let g:WhichKeyDesc_fold_all = "<leader>zc Fold all regions"
+"let g:WhichKeyDesc_unfold_all = "<leader>zo Unfold all regions"
 
 let g:WhichKeyDesc_window = "<leader>w Window splits"
 let g:WhichKeyDesc_window_split_vertically = "<leader>wv Split vertically"
-let g:WhichKeyDesc_window_split_horizontally = "<leader>wh Split horizontally"
+let g:WhichKeyDesc_window_split_horizontally = "<leader>ws Split horizontally"
 let g:WhichKeyDesc_window_split_unsplit = "<leader>wu Unsplit"
 let g:WhichKeyDesc_window_split_move_editor = "<leader>wm Move editor to opposite tab group"
-
 
 let g:WhichKeyDesc_display = "<leader>d Display options"
 let g:WhichKeyDesc_zen_mode = "<leader>dz Toggle Zen mode"
@@ -67,6 +67,7 @@ let g:WhichKeyDesc_df_mode = "<leader>dd Toggle Distraction-Free mode"
 let g:WhichKeyDesc_fullscreen = "<leader>df Toggle full screen"
 
 let g:WhichKeyDesc_action= "<leader>a Actions"
+let g:WhichKeyDesc_action_actions_menu = "<leader>aa Open actions menu"
 let g:WhichKeyDesc_action_context_menu = "<leader>am Open context menu"
 let g:WhichKeyDesc_action_search = "<leader>as Open command modal"
 
@@ -76,6 +77,7 @@ let g:WhichKeyDesc_file_nav_goto_content = "<leader>fc Search for file content"
 let g:WhichKeyDesc_file_nav_show_recent_files = "<leader>fr Show recent files"
 let g:WhichKeyDesc_file_nav_show_recent_locations = "<leader>fl Show recent locations"
 let g:WhichKeyDesc_file_nav_new_file = "<leader>fs Create new file"
+let g:WhichKeyDesc_file_nav_open_in_navigation = "<leader>fo Select open file in project view"
 
 let g:WhichKeyDesc_close_tab = "<leader>q Close active tab"
 
@@ -91,20 +93,64 @@ let g:WhichKeyDesc_goto = "<leader>g Go to X"
 let g:WhichKeyDesc_goto_declaration = "<leader>gd Go to Definition"
 let g:WhichKeyDesc_goto_type_declaration = "<leader>gy Go to Type Definition"
 let g:WhichKeyDesc_goto_implementation = "<leader>gi Go to Implementation"
-let g:WhichKeyDesc_goto_usages = "<leader>gu Go to Usages"
+let g:WhichKeyDesc_goto_usages = "<leader>gs Go to Usages"
 let g:WhichKeyDesc_goto_test = "<leader>gt Go to Test"
 let g:WhichKeyDesc_goto_back = "<leader>gb Go Back"
 let g:WhichKeyDesc_goto_forward = "<leader>gf Go Forward"
 
+" Git windows
 let g:WhichKeyDesc_git = "<leader>b Git operations"
-let g:WhichKeyDesc_git_commit = "<leader>bc Open Git commit dialog"
-let g:WhichKeyDesc_git_status = "<leader>bs Open Git status dialog"
-let g:WhichKeyDesc_git_branches = "<leader>bb Open Git branches list"
-let g:WhichKeyDesc_git_new_branch = "<leader>bn Make a new git branch"
+let g:WhichKeyDesc_git_checkin = "<leader>bc Checkin Project"
+let g:WhichKeyDesc_git_activate_vc_tool_window = "<leader>bs Activate Version Control Tool Window"
+let g:WhichKeyDesc_git_branches = "<leader>bb Git Branches"
+let g:WhichKeyDesc_git_new_branch = "<leader>bn Git New Branch"
+let g:WhichKeyDesc_git_stash = "<leader>bh Git Stash"
+let g:WhichKeyDesc_git_checkout = "<leader>bo Git Checkout"
+let g:WhichKeyDesc_git_annotate = "<leader>bj Annotate"
+let g:WhichKeyDesc_git_push = "<leader>bp Push"
+let g:WhichKeyDesc_git_update = "<leader>bu Update project"
+let g:WhichKeyDesc_git_merge = "<leader>bm Merge branch"
+let g:WhichKeyDesc_git_fileHistory = "<leader>bH Git file history"
+
+" Control windows
+let g:WhichKeyDesc_control = "<leader>l Activate windows"
+let g:WhichKeyDesc_control_services_tool_window = "<leader>ll Activate Services Tool Window"
+let g:WhichKeyDesc_control_terminal_tool_window = "<leader>l; Activate Terminal Tool Window"
+let g:WhichKeyDesc_control_debug_tool_window = "<leader>ld Activate Debug Tool Window"
+let g:WhichKeyDesc_control_problems_view_tool_window = "<leader>le Activate Problems View Tool Window"
+let g:WhichKeyDesc_control_jdbc_console = "<leader>ly JDBC Open Console New Generate"
+let g:WhichKeyDesc_control_database_tool_window = "<leader>lf Activate Database Tool Window"
+let g:WhichKeyDesc_control_hide_active_window = "<leader>lq Hide Active Window"
+let g:WhichKeyDesc_control_build_tool_window = "<leader>lb Activate Build Tool Window"
+
+" Debugging
+let g:WhichKeyDesc_debug = "<leader>h Run and debug"
+let g:WhichKeyDesc_debug_run = "<leader>hr Run"
+let g:WhichKeyDesc_debug_debug = "<leader>hh Debug"
+let g:WhichKeyDesc_debug_debugConfig = "<leader>hH Choose debug configuration"
+let g:WhichKeyDesc_debug_stop = "<leader>hs Stop"
+let g:WhichKeyDesc_debug_update_running_app = "<leader>hu Update Running Application"
+let g:WhichKeyDesc_debug_compile_dirty = "<leader>hb Compile Dirty"
 
 let g:WhichKeyDesc_errors = "<leader>e Error navigation"
+let g:WhichKeyDesc_goto_next_error = "<leader>en ReSharper Go to Next Error in Solution"
+let g:WhichKeyDesc_goto_prev_error = "<leader>ep ReSharper Go to Previous Error in Solution"
+let g:WhichKeyDesc_toggle_line_breakpoint = "<leader>eb Toggle Line Breakpoint"
+let g:WhichKeyDesc_step_over = "<leader>ee Step Over"
+let g:WhichKeyDesc_resume = "<leader>er Resume"
+let g:WhichKeyDesc_step_into = "<leader>ej Step Into"
+let g:WhichKeyDesc_run_to_cursor = "<leader>ek Run To Cursor"
+let g:WhichKeyDesc_quick_evaluate_expression = "<leader>eh Quick Evaluate Expression"
+let g:WhichKeyDesc_mute_breakpoints = "<leader>em Mute Breakpoints"
+
+
 let g:WhichKeyDesc_errors_next = "<leader>en Go to next error in solution"
 let g:WhichKeyDesc_errors_prev = "<leader>ep Go to previous error in solution"
+let g:WhichKeyDesc_toggle_line_breakpoint = "<leader>eb Toggle Line Breakpoint"
+let g:WhichKeyDesc_step_over = "<leader>ee Step Over"
+let g:WhichKeyDesc_resume = "<leader>er Resume"
+let g:WhichKeyDesc_step_into = "<leader>ej Step Into"
+let g:WhichKeyDesc_run_to_cursor = "<leader>ek Run To Cursor"
 
 let g:WhichKeyDesc_surround_change = "cs Change nearest surrounding"
 let g:WhichKeyDesc_surround_delete = "ds Delete nearest surrounding"
@@ -114,7 +160,7 @@ let g:WhichKeyDesc_surround_yank = "yy Yank current line"
 "" Key mappings
 "" ========================================================
 
-inoremap jk <Esc>
+" inoremap jk <Esc>
 
 " Tab navigation
 nnoremap <A-n> :tabnext<CR>
@@ -138,14 +184,18 @@ vnoremap > >gv
 nnoremap qj @q
 
 " Popup navigation
-" imap <C-j> :Action PopupMenu-selectNext<CR>
-" imap <C-k> :Action PopupMenu-selectPrev<CR>
+" map <C-j> <Action>(PopupMenu-selectNext)<CR>
+" map <C-k> <Action>(PopupMenu-selectPrev)<CR>
+" map <C-j> <Action>(EditorDown)<CR>
+" map <C-k> <Action>(EditorUp)<CR>
+" map <C-j> <Action>(List-selectNextRow)<CR>
+" map <C-k> <Action>(List-previousNextRow)<CR>
 
 "" Leader commands
 "" ========================================================
 
 " Comment lines
-map <leader>c :action CommentByLineComment<CR>
+map <leader>c <Action>(CommentByLineComment)<CR>
 
 " Jump around with easymotion
 map <leader>j <Plug>(easymotion-s)
@@ -154,8 +204,8 @@ map <leader>j <Plug>(easymotion-s)
 map <leader>x :NERDTreeToggle<CR>
 
 " Folding
-map <leader>zc <Action>(CollapseAllRegions)<CR>
-map <leader>zo <Action>(ExpandAllRegions)<CR>
+"map <leader>zc <Action>(CollapseAllRegions)<CR>
+"map <leader>zo <Action>(ExpandAllRegions)<CR>
 
 " Window splits
 map <leader>wv <Action>(SplitVertically)<CR>
@@ -191,15 +241,16 @@ map <leader>rv <Action>(IntroduceVariable)<CR>
 map <leader>rf <Action>(IntroduceField)<CR>
 map <leader>rs <Action>(ChangeSignature)<CR>
 map <leader>rr <Action>(Refactorings.QuickListPopupAction)<CR>
+map <leader>= <Action>(ReformatCode)<CR>
 
 " Go to code
 nmap <leader>gd <Action>(GotoDeclaration)<CR>
 nmap <leader>gy <Action>(GotoTypeDeclaration)<CR>
 nmap <leader>gi <Action>(GotoImplementation)<CR>
-nmap <leader>gu <Action>(ShowUsages)<CR>
+nmap <leader>gs <Action>(ShowUsages)<CR>
 nmap <leader>gt <Action>(GotoTest)<CR>
-nmap <leader>gf <Action>(Back)<CR>
-nmap <leader>gb <Action>(Forward)<CR>
+nmap <leader>gf <Action>(Forward)<CR>
+nmap <leader>gb <Action>(Back)<CR>
 
 " Git windows
 map <leader>bc <Action>(CheckinProject)<CR>
@@ -207,8 +258,12 @@ map <leader>bs <Action>(ActivateVersionControlToolWindow)<CR>
 map <leader>bb <Action>(Git.Branches)<CR>
 map <leader>bn <Action>(GitNewBranchAction)<CR>
 map <leader>bh <Action>(Git.Stash)<CR>
+map <leader>bH <Action>(Vcs.ShowTabbedFileHistory)<CR>
 map <leader>bo <Action>(GitCheckoutAction)<CR>
 map <leader>bj <Action>(Annotate)<CR>
+map <leader>bp <Action>(Vcs.Push)<CR>
+map <leader>bu <Action>(Vcs.UpdateProject)<CR>
+map <leader>bm <Action>(Git.Merge)<CR>
 
 " Control windows
 map <leader>ll <Action>(ActivateServicesToolWindow)<CR>
@@ -217,14 +272,24 @@ map <leader>ld <Action>(ActivateDebugToolWindow)<CR>
 map <leader>le <Action>(ActivateProblemsViewToolWindow)<CR>
 map <leader>ly <Action>(Jdbc.OpenConsole.New.Generate)<CR>
 map <leader>lf <Action>(ActivateDatabaseToolWindow)<CR>
+map <leader>lb <Action>(ActivateBuildToolWindow)<CR>
 map <leader>lq <Action>(HideActiveWindow)<CR>
 
 " Debugging
 map <leader>hr <Action>(Run)<CR>
 map <leader>hh <Action>(Debug)<CR>
+map <leader>hH <Action>(ChooseDebugConfiguration)<CR>
 map <leader>hs <Action>(Stop)<CR>
 map <leader>hu <Action>(UpdateRunningApplication)<CR>
+map <leader>hb <Action>(CompileDirty)<CR>
 
 " Errors
 map <leader>en <Action>(ReSharperGotoNextErrorInSolution)<CR>
 map <leader>ep <Action>(ReSharperGotoPrevErrorInSolution)<CR>
+map <leader>eb <Action>(ToggleLineBreakpoint)<CR>
+map <leader>ee <Action>(StepOver)<CR>
+map <leader>er <Action>(Resume)<CR>
+map <leader>ej <Action>(StepInto)<CR>
+map <leader>ek <Action>(RunToCursor)<CR>
+map <leader>eh <Action>(QuickEvaluateExpression)<CR>
+map <leader>em <Action>(XDebugger.MuteBreakpoints)<CR>
